@@ -1,0 +1,1 @@
+streamlit run vanilla-data-app-fixed.py
