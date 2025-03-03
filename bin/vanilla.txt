@@ -1,0 +1,13 @@
+i have a python ML project to do.plz do it to me.after building it,very simply guide me about all details wht did u do and other information such as hiw run it(i donno it would have something to run i tell that as a example)
+i explained it in the below as steps 
+my project have mainly 2 parts.1)creating dataset as given requirements 2)create a ML model and train it using the dataset which u gave me before
+after doing the project, explain every step of the wht u did very simply bcz of i'm very beginner
+
+give me a dataset for how sri lanka's kandy reagon's temperature,humidity and light level 
+would change 
+once a month data should be gathered 
+finally their should be 36 data points (3*12)
+
+
+
+
