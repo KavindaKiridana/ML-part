@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla Vine Growth Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Vanilla Vine Growth Prediction System</h1>
+
+        <div class="card">
+            <h2>1. Train Model with Data</h2>
+            <form id="trainForm" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="dataFile">Upload Data File (Tab-separated):</label>
+                    <input type="file" id="dataFile" name="dataFile" accept=".txt,.csv">
+                </div>
+                <button type="submit" id="trainButton">Train Model</button>
+            </form>
+            <div id="trainResult" class="result-box"></div>
+        </div>
+
+        <div class="card">
+            <h2>2. Predict Future Growth</h2>
+            <form id="predictForm">
+                <div class="form-group">
+                    <label for="targetWeek">Target Week Number:</label>
+                    <input type="number" id="targetWeek" name="targetWeek" min="1" required>
+                </div>
+
+                <h3>Environmental Factors (Optional)</h3>
+                <div class="form-group">
+                    <label for="temperature">Average Temperature (°C):</label>
+                    <input type="number" id="temperature" name="temperature" step="0.1" placeholder="24.5">
+                </div>
+                <div class="form-group">
+                    <label for="humidity">Average Humidity (%):</label>
+                    <input type="number" id="humidity" name="humidity" step="0.1" placeholder="75.0">
+                </div>
+                <div class="form-group">
+                    <label for="lightLevel">Average Light Level (lux):</label>
+                    <input type="number" id="lightLevel" name="lightLevel" step="100" placeholder="30000">
+                </div>
+
+                <button type="submit" id="predictButton">Predict Growth</button>
+            </form>
+            <div id="predictResult" class="result-box"></div>
+        </div>
+
+        <div class="card">
+            <h2>Growth Trends Visualization</h2>
+            <div class="visualization">
+                <img id="growthChart" src="" alt="Vanilla Growth Trends" style="display: none; max-width: 100%;">
+                <p id="noVisualization">No visualization available. Train the model first.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="static/script.js"></script>
+</body>
+
+</html>

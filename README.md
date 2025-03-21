@@ -14,7 +14,7 @@ The Vanilla application consists of two main components:
 To run the growth prediction command-line application:
 
 ```
-vanilla-growth-prediction-fixed.py
+python vanilla-growth-prediction-fixed.py
 ```
 
 This will execute the command-line interface for making growth predictions.
