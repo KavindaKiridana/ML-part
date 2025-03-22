@@ -13,6 +13,14 @@ This application predicts how your vanilla vines will grow over time.
 Enter your current measurements and see what to expect in the future!
 """)
 
+# Add the "View Farm" button at the top of the application
+# NEW CODE: Added button that opens a new tab with the portfolio website when clicked
+if st.button("View Farm"):
+    # Open URL in a new tab (this works when the app is run locally)
+    # Note: In deployed Streamlit apps, we need to use JavaScript for redirection
+    st.markdown(f'<meta http-equiv="refresh" content="0;url={"https://kavindakiridana.github.io/myportfolio/"}">', unsafe_allow_html=True)
+    st.success("Redirecting to farm website...")
+
 # Function to load or train models
 @st.cache_resource
 def get_models(data_file='vanilla_data.txt'):
